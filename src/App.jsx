@@ -18,7 +18,6 @@ import {
   ShoppingCart,
 } from './pages'
 
-import { FormPdf } from './pages/formPdf'
 
 
 
