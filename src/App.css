@@ -1,0 +1,258 @@
+html
+body {
+  height: 100%;
+  min-height: 100vh;
+  
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.imgperro{
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+#root.light {
+  background-color: rgb(253, 253, 253);
+
+  nav {
+    background-color: lightpink;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(233, 165, 175);
+    transition: 0.3s;
+  }
+
+  .reactinfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+    /* Por defecto, imagen y texto en una fila */
+    padding: 16px;
+  }
+
+  .reactinfo img {
+    max-width: 350px;
+    /* Limitar el tamaño de la imagen */
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .reactinfo {
+      flex-direction: column;
+      /* Imagen arriba, texto debajo */
+      text-align: center;
+      /* Centrar el contenido */
+    }
+
+    .reactinfo img {
+      margin-bottom: 8px;
+      /* Espacio entre la imagen y el texto */
+    }
+  }
+
+  section {
+    border: 3px solid;
+    border-radius: 15px;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 600px;
+    /* Define un ancho máximo para que quede centrado */
+    text-align: center;
+    /* Centra los elementos dentro de la sección */
+  }
+
+  section img {
+    display: block;
+    margin: 0 auto 16px;
+    /* Centra la imagen y agrega margen inferior */
+    max-width: 50%;
+    /* Asegúrate de que la imagen sea responsiva */
+    height: auto;
+  }
+
+  section p {
+    text-align: justify;
+    font-size: 16px;
+    /* Tamaño razonable para lectura */
+    color: #333;
+    /* Color del texto */
+    margin: 0 8px;
+    /* Agrega un pequeño margen horizontal */
+  }
+
+  section.js {
+    color: #f7df1e;
+    border-color: #f7df1e;
+  }
+
+  section.ts {
+    color: #0e60a6;
+    border-color: #0e60a6;
+  }
+
+  section.nd {
+    color: #21a366;
+    border-color: #21a366;
+  }
+
+
+  .infoboxes {
+    margin-top: 35px;
+    display: grid;
+    gap: 16px;
+    /* Espacio entre los divs */
+  }
+
+  /* Para pantallas medianas (tablets o similares) */
+  @media (min-width: 768px) {
+    div.infoboxes {
+      grid-template-columns: repeat(2, 1fr);
+      /* Dos columnas */
+    }
+  }
+
+  /* Para pantallas grandes (ordenadores) */
+  @media (min-width: 1024px) {
+    div.infoboxes {
+      grid-template-columns: repeat(3, 1fr);
+      /* Tres columnas */
+    }
+  }
+
+}
+
+#root.dark {
+  background-color: rgb(14, 27, 11);
+
+  nav {
+    background-color: rgb(3, 95, 3);
+  }
+
+  nav ul li:hover {
+    background-color: rgb(4, 80, 4);
+    transition: 0.3s;
+  }
+
+  p {
+    color: #9b9a9a;
+  }
+
+  .reactinfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+    /* Por defecto, imagen y texto en una fila */
+    padding: 16px;
+  }
+
+  .reactinfo img {
+    max-width: 350px;
+    /* Limitar el tamaño de la imagen */
+    height: auto;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .reactinfo {
+      flex-direction: column;
+      /* Imagen arriba, texto debajo */
+      text-align: center;
+      /* Centrar el contenido */
+    }
+
+    .reactinfo img {
+      margin-bottom: 8px;
+      /* Espacio entre la imagen y el texto */
+    }
+  }
+
+
+  section {
+    border: 3px solid;
+    border-radius: 15px;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 600px;
+    /* Define un ancho máximo para que quede centrado */
+    text-align: center;
+    /* Centra los elementos dentro de la sección */
+  }
+
+  section img {
+    display: block;
+    margin: 0 auto 16px;
+    /* Centra la imagen y agrega margen inferior */
+    max-width: 50%;
+    /* Asegúrate de que la imagen sea responsiva */
+    height: auto;
+  }
+
+  section p {
+    text-align: justify;
+    font-size: 16px;
+    /* Tamaño razonable para lectura */
+    color: #9b9a9a;
+    /* Color del texto */
+    margin: 0 8px;
+    /* Agrega un pequeño margen horizontal */
+  }
+
+  section.js {
+    color: #f7df1e;
+    border-color: #f7df1e;
+  }
+
+  section.ts {
+    color: #0e60a6;
+    border-color: #0e60a6;
+  }
+
+  section.nd {
+    color: #21a366;
+    border-color: #21a366;
+  }
+
+
+  .infoboxes {
+    margin-top: 35px;
+    display: grid;
+    gap: 16px;
+    /* Espacio entre los divs */
+  }
+
+  label{
+    color: #9b9a9a;
+  }
+
+  h1, h2, ul li{
+    color: #9b9a9a;
+  }
+
+  /* Para pantallas medianas (tablets o similares) */
+  @media (min-width: 768px) {
+    div.infoboxes {
+      grid-template-columns: repeat(2, 1fr);
+      /* Dos columnas */
+    }
+  }
+
+  /* Para pantallas grandes (ordenadores) */
+  @media (min-width: 1024px) {
+    div.infoboxes {
+      grid-template-columns: repeat(3, 1fr);
+      /* Tres columnas */
+    }
+  }
+}
+
